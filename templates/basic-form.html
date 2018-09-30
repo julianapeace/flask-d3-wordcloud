@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<form action="/basic-form" method="post">
+  {{form.name.label}}
+  <input type="text" name="name" value="">
+  <button type="submit" name="button">Submit</button>
+</form>
+{% endblock %}
